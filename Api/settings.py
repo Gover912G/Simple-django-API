@@ -41,8 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
-CORS_ALLOWED_ORIGINS = ['*'] # '*' is not advisable rather you should specify the domain IP address
-                            #you would like it to access/consume the resourses
+
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
     'django.middleware.security.SecurityMiddleware',
@@ -53,7 +52,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+# CORS_ALLOWED_ORIGINS = ['http://127.0.0.1:5173/'] # '*' is not advisable rather you should specify the domain IP address
+                            #you would like it to access/consume the resourses
 ROOT_URLCONF = 'Api.urls'
 
 TEMPLATES = [
